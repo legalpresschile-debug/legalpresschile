@@ -1,22 +1,24 @@
 import React from "react";
 
 const WA_BASE = "https://wa.me/56950390399";
-const WA_GENERAL = `${WA_BASE}?text=Hola%2C%20necesito%20evaluar%20mi%20caso%20laboral%20municipal.`;
+const WA_GENERAL = `${WA_BASE}?text=Hola%2C%20necesito%20evaluar%20mi%20caso%20de%20despido%20o%20acoso%20laboral.`;
 const WA_HONORARIOS = `${WA_BASE}?text=Hola%2C%20trabajo%20a%20honorarios%20en%20una%20municipalidad%20y%20quiero%20evaluar%20mi%20caso.`;
-const WA_KARIN = `${WA_BASE}?text=Hola%2C%20quiero%20consultar%20un%20caso%20de%20Ley%20Karin%20en%20una%20municipalidad.`;
+const WA_KARIN = `${WA_BASE}?text=Hola%2C%20quiero%20consultar%20un%20caso%20de%20Ley%20Karin%20en%20el%20sector%20publico%20o%20privado.`;
 
 const services = [
+ {icon:"📋",title:"Despidos en el sector privado",description:"Revisión de carta de despido, finiquito, causal y prestaciones pendientes."},
+ {icon:"⚖️",title:"Ley Karin y acoso laboral o sexual",description:"Evaluación de denuncias, medidas de resguardo y defensa en investigaciones del sector público y privado."},
   {
     icon: "⚖️",
     title: "Tutela laboral y derechos fundamentales",
     description:
-      "Hostigamiento, represalias, discriminación, menoscabo, afectación de la integridad psíquica. El arma más potente del Código del Trabajo.",
+      "Hostigamiento, represalias, discriminación, menoscabo, afectación de la integridad psíquica. Evaluación de las vías de protección según el vínculo y los hechos.",
   },
   {
     icon: "📄",
     title: "Honorarios con relación laboral encubierta",
     description:
-      "Cuando llevas años trabajando como honorario con funciones permanentes y subordinación real. Es mi especialidad y conozco la jurisprudencia.",
+      "Cuando llevas años trabajando como honorario con funciones permanentes y subordinación real. Revisamos las funciones y los antecedentes del vínculo.",
   },
   {
     icon: "🏛️",
@@ -28,7 +30,7 @@ const services = [
     icon: "🛡️",
     title: "Defensa en sumarios administrativos",
     description:
-      "Representación técnica desde los descargos hasta la impugnación. Conozco el procedimiento desde adentro.",
+      "Representación técnica desde los descargos hasta la impugnación. Revisión de cargos, prueba y garantías del procedimiento.",
   },
   {
     icon: "💰",
@@ -45,7 +47,7 @@ const services = [
 ];
 
 const problems = [
-  { num: "01", title: "Despido injustificado de funcionario municipal" },
+  { num: "01", title: "Despido injustificado en el sector privado" },
   { num: "02", title: "No renovación arbitraria de contrata" },
   { num: "03", title: "Honorario municipal que encubre relación laboral" },
   { num: "04", title: "Sumario administrativo en municipalidad" },
@@ -69,19 +71,19 @@ const faqs = [
   },
   {
     q: "¿Cuánto tiempo tengo para actuar después de un despido?",
-    a: "Depende de la acción. La tutela laboral tiene 60 días hábiles desde el despido. Para otras acciones los plazos varían. Mientras antes consultes, más opciones tendrás disponibles.",
+    a: "Consulta apenas se comunica el término. Los plazos dependen de la acción y del régimen aplicable. En el sector público es esencial revisar el acto de término y su notificación.",
   },
   {
     q: "¿Trabajas solo con funcionarios de planta?",
-    a: "No. Atiendo funcionarios de planta y contrata, trabajadores a honorarios, personal de corporaciones municipales y cualquier trabajador regido por el Código del Trabajo en el ámbito municipal.",
+    a: "Atiendo a trabajadores del sector privado y a personas del sector público, incluyendo planta, contrata y honorarios. Revisamos el régimen aplicable a cada vínculo.",
   },
   {
     q: "¿Qué documentos necesito para la evaluación inicial?",
     a: "Lo que tengas disponible: contrato o decreto de nombramiento, correos, WhatsApp, liquidaciones, licencias médicas, resoluciones o cualquier antecedente que muestre cómo trabajabas realmente.",
   },
   {
-    q: "¿Atiendes casos de Ley Karin en municipalidades?",
-    a: "Sí. Tanto a víctimas de acoso laboral o sexual como a funcionarios investigados. Las municipalidades están obligadas a aplicar el protocolo de la Ley Karin y hay acciones disponibles cuando no lo hacen.",
+    q: "¿Atiendes casos de Ley Karin en ambos sectores?",
+    a: "Sí. Evaluamos casos del sector público y privado, tanto de personas afectadas como de personas investigadas, según el procedimiento aplicable.",
   },
   {
     q: "¿Cómo son los honorarios del estudio?",
@@ -251,11 +253,11 @@ export default function App() {
         <div>
           <div className="hero-eyebrow">
             <span className="hero-eyebrow-dot" />
-            Defensa laboral municipal en Chile
+            Defensa laboral en el sector público y privado
           </div>
-          <h1>¿La municipalidad<br />terminó tu contrato?<br /><em>Tienes derechos.</em></h1>
+          <h1>Despidos y acoso laboral.<br /><em>Sector público y privado.</em></h1>
           <p className="hero-sub">
-            Funcionarios, honorarios y personal Código del Trabajo. Despidos, no renovación de contrata, hostigamiento y Ley Karin. Evaluación seria, estrategia clara.
+            Defensa ante despidos, términos de contrata y acoso laboral o sexual. Revisamos tus antecedentes y los plazos aplicables para definir una estrategia clara.
           </p>
           <div className="hero-btns">
             <a href={WA_GENERAL} target="_blank" rel="noreferrer" className="btn-primary">
@@ -265,9 +267,9 @@ export default function App() {
             <a href="#servicios" className="btn-secondary">Ver servicios →</a>
           </div>
           <div className="hero-trust">
-            <span className="trust-chip">26 años de experiencia</span>
+            <span className="trust-chip">Evaluación documental</span>
             <span className="trust-chip">Atención directa del abogado</span>
-            <span className="trust-chip">Solo sector municipal</span>
+            <span className="trust-chip">Sector público y privado</span>
           </div>
         </div>
         <div className="hero-card">
@@ -277,7 +279,7 @@ export default function App() {
           </div>
           <div className="card-body">
             {[
-              ["⚖️", "Especialización única", "Conflictos laborales del ámbito municipal: contratas, honorarios, sumarios, Ley Karin"],
+              ["⚖️", "Defensa laboral", "Despidos, contratas, honorarios, sumarios y Ley Karin en ambos sectores"],
               ["📋", "Análisis documental completo", "Decretos, contratos, correos, liquidaciones, resoluciones"],
               ["🎯", "Estrategia antes de demandar", "Negociar, recurrir administrativamente o litigar: se decide con criterio"],
               ["🤝", "Atención directa", "Hablas con el abogado. Sin intermediarios."],
@@ -300,7 +302,7 @@ export default function App() {
       <section className="section" id="problemas">
         <div className="section-eyebrow">Casos frecuentes</div>
         <h2>¿Cuál es tu situación?</h2>
-        <p className="section-desc">Trabajo con personas del ámbito municipal que enfrentan conflictos reales. Si tu situación es alguna de estas, puedo ayudarte.</p>
+        <p className="section-desc">Trabajo con personas del sector público y privado que enfrentan conflictos laborales. Si tu situación es alguna de estas, puedo ayudarte.</p>
         <div className="problems-grid">
           {problems.map((p) => (
             <div className="problem-card" key={p.num}>
@@ -336,13 +338,13 @@ export default function App() {
             <div className="section-eyebrow">Por qué este estudio</div>
             <h2>No es asesoría genérica.<br />Es defensa con foco.</h2>
             <p style={{ fontSize: 16, color: "var(--ink2)", lineHeight: 1.8, marginBottom: 16 }}>
-              Los conflictos en municipalidades tienen su propio lenguaje: contratas, decretos, estatuto administrativo, honorarios, corporaciones. Un abogado generalista puede perderse en ese laberinto.
+              Cada vínculo exige un análisis propio. Revisamos el contrato o nombramiento, las funciones y el acto de término para identificar el régimen aplicable.
             </p>
             <p style={{ fontSize: 16, color: "var(--ink2)", lineHeight: 1.8 }}>
-              Trabajo exclusivamente en este ámbito desde hace años. Conozco la jurisprudencia, los argumentos que funcionan y los que no.
+              La estrategia se construye con los documentos, la normativa y la jurisprudencia pertinente a cada caso.
             </p>
             <div className="why-stats">
-              {[["26", "años en litigación"], ["100%", "foco municipal"], ["1", "abogado directo"], ["3", "vías: negociar, Inspección o demandar"]].map(([n, l]) => (
+              {[["2", "sectores: público y privado"], ["1", "atención directa"], ["Caso", "análisis individual"], ["Plazos", "revisión prioritaria"]].map(([n, l]) => (
                 <div className="stat-box" key={l}>
                   <div className="stat-num">{n}</div>
                   <div className="stat-label">{l}</div>
@@ -369,13 +371,13 @@ export default function App() {
       {/* LEY KARIN */}
       <section className="section" id="ley-karin">
         <div className="section-eyebrow">Ley Karin</div>
-        <h2>Acoso laboral y sexual<br />en municipalidades</h2>
-        <p className="section-desc">La Ley N° 21.643, vigente desde agosto de 2024, transformó radicalmente la protección frente al acoso en el trabajo. Las municipalidades son empleadores obligados.</p>
+        <h2>Acoso laboral y sexual<br />en el sector público y privado</h2>
+        <p className="section-desc">La Ley N° 21.643 regula la prevención, investigación y sanción del acoso laboral, sexual y la violencia en el trabajo. Comprende el sector público y privado, con procedimientos según el régimen aplicable.</p>
         <div className="karin-banner">
           <div>
             <span className="karin-badge">Ley Karin · Vigente</span>
-            <div className="karin-title">¿Sufres acoso laboral o sexual en tu municipalidad?</div>
-            <p className="karin-desc">La ley amplió la definición de acoso, creó nuevas obligaciones para el empleador y estableció sanciones más severas. Si fuiste víctima o testigo, los plazos para actuar son breves. Cuéntame tu caso.</p>
+            <div className="karin-title">¿Enfrentas acoso laboral o sexual en tu trabajo?</div>
+            <p className="karin-desc">Evaluamos denuncias, medidas de resguardo y procedimientos de investigación. Atendemos a personas afectadas y a quienes requieren defensa ante una investigación.</p>
           </div>
           <a href={WA_KARIN} target="_blank" rel="noreferrer" className="karin-cta">Consultar Ley Karin →</a>
         </div>
@@ -398,7 +400,8 @@ export default function App() {
         </div>
       </section>
 
-      {/* FAQ */}
+      <section className="section"><div className="section-eyebrow">Información por servicio</div><h2>Revisa tu situación</h2><div className="faq-grid"><p><a className="btn-secondary" href="/despidos-sector-privado.html">Despidos en el sector privado →</a></p><p><a className="btn-secondary" href="/termino-funciones-sector-publico.html">Término de funciones en el sector público →</a></p><p><a className="btn-secondary" href="/ley-karin-acoso-laboral.html">Ley Karin y acoso laboral o sexual →</a></p><p><a className="btn-secondary" href="/defensa-municipal.html">Defensa laboral municipal →</a></p></div></section>
+{/* FAQ */}
       <section className="section" id="faq">
         <div className="section-eyebrow">Preguntas frecuentes</div>
         <h2>Respuestas antes de consultar</h2>
@@ -430,9 +433,9 @@ export default function App() {
         <div className="footer-inner">
           <div>
             <div className="footer-logo">LegalPressChile</div>
-            <div className="footer-sub">Abogado Eduardo Yévenes · Defensa laboral municipal en Chile</div>
+            <div className="footer-sub">Abogado Eduardo Yévenes · Defensa laboral en el sector público y privado</div>
           </div>
-          <div className="footer-right">+56 9 5039 0399 · legalpresschile.cl</div>
+          <div className="footer-right">+56 9 5039 0399</div>
         </div>
       </footer>
     </>

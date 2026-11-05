@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://legalpresschile-uskj.vercel.app/sitemap.xml
