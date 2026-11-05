@@ -241,6 +241,7 @@ export default function App() {
             <a href="#proceso">Proceso</a>
             <a href="#ley-karin">Ley Karin</a>
             <a href="#faq">Preguntas</a>
+            <a href="#jurisprudencia">Jurisprudencia</a>
           </div>
           <a href={WA_GENERAL} target="_blank" rel="noreferrer" className="nav-cta">
             Evaluar mi caso →
@@ -401,7 +402,18 @@ export default function App() {
       </section>
 
       <section className="section"><div className="section-eyebrow">Información por servicio</div><h2>Revisa tu situación</h2><div className="faq-grid"><p><a className="btn-secondary" href="/despidos-sector-privado.html">Despidos en el sector privado →</a></p><p><a className="btn-secondary" href="/termino-funciones-sector-publico.html">Término de funciones en el sector público →</a></p><p><a className="btn-secondary" href="/ley-karin-acoso-laboral.html">Ley Karin y acoso laboral o sexual →</a></p><p><a className="btn-secondary" href="/defensa-municipal.html">Defensa laboral municipal →</a></p></div></section>
-{/* FAQ */}
+
+      <section className="section" id="jurisprudencia" aria-labelledby="jurisprudencia-titulo">
+        <div className="section-eyebrow">Análisis de sentencias</div>
+        <h2 id="jurisprudencia-titulo">Jurisprudencia laboral</h2>
+        <p className="section-desc">Despidos, derechos fundamentales y acoso laboral. Comentarios de Eduardo Yevenes, Gerente Legal, con acceso a las sentencias consultadas.</p>
+        <div className="faq-grid">
+          <article className="faq-item"><h3 className="faq-q"><a href="/despido-discriminatorio-rechazar-anexo-contrato.html">Despido por rechazar un anexo perjudicial. El criterio de la Corte Suprema</a></h3><p className="faq-a">Análisis del fallo 56.819-2024 sobre trabajadores despedidos por negarse a modificar sus contratos en perjuicio de sus condiciones laborales.</p><a href="/despido-discriminatorio-rechazar-anexo-contrato.html">Leer análisis →</a></article>
+          <article className="faq-item"><h3 className="faq-q"><a href="/ley-karin-despido-acoso-laboral-prueba.html">Ley Karin y despido por acoso laboral. Qué examinó un tribunal en un caso municipal</a></h3><p className="faq-a">Comentario de la sentencia O-4311-2025 sobre prueba del acoso laboral, proporcionalidad y despido de una trabajadora municipal regida por el Código del Trabajo.</p><a href="/ley-karin-despido-acoso-laboral-prueba.html">Leer análisis →</a></article>
+        </div>
+      </section>
+
+      {/* FAQ */}
       <section className="section" id="faq">
         <div className="section-eyebrow">Preguntas frecuentes</div>
         <h2>Respuestas antes de consultar</h2>
