@@ -58,10 +58,10 @@ const problems = [
 ];
 
 const process = [
-  { num: "1", title: "Contacto inicial", text: "Me escribes por WhatsApp con un resumen de tu situación y los documentos disponibles." },
-  { num: "2", title: "Evaluación del caso", text: "Reviso antecedentes, identifico el tipo de vínculo, el problema jurídico y la urgencia." },
-  { num: "3", title: "Estrategia clara", text: "Te explico si conviene negociar, reclamar administrativamente o demandar judicialmente." },
-  { num: "4", title: "Representación", text: "Si decides avanzar, me hago cargo del caso completo con foco técnico y probatorio." },
+  { num: "1", title: "Contacto inicial", text: "Nos escribes por WhatsApp con un resumen de tu situación y los documentos disponibles." },
+  { num: "2", title: "Evaluación del caso", text: "Revisamos los antecedentes e identificamos el tipo de vínculo, el problema jurídico y la urgencia." },
+  { num: "3", title: "Estrategia clara", text: "Te explicamos si conviene negociar, reclamar administrativamente o demandar judicialmente." },
+  { num: "4", title: "Representación", text: "Si decides avanzar, nuestro equipo se encarga de la representación y la preparación de la prueba." },
 ];
 
 const faqs = [
@@ -234,7 +234,7 @@ export default function App() {
         <div className="nav-inner">
           <div>
             <div className="logo-main">LegalPressChile</div>
-            <div className="logo-sub">Abogado Eduardo Yévenes</div>
+            <div className="logo-sub">Estudio jurídico laboral</div>
           </div>
           <div className="nav-links">
             <a href="#servicios">Servicios</a>
@@ -258,7 +258,7 @@ export default function App() {
           </div>
           <h1>Despidos y acoso laboral.<br /><em>Sector público y privado.</em></h1>
           <p className="hero-sub">
-            Defensa ante despidos, términos de contrata y acoso laboral o sexual. Revisamos tus antecedentes y los plazos aplicables para definir una estrategia clara.
+            Somos un equipo de abogados dirigido por Eduardo Yévenes. Defendemos a trabajadores del sector público y privado ante despidos, términos de contrata y acoso laboral o sexual.
           </p>
           <div className="hero-btns">
             <a href={WA_GENERAL} target="_blank" rel="noreferrer" className="btn-primary">
@@ -269,21 +269,21 @@ export default function App() {
           </div>
           <div className="hero-trust">
             <span className="trust-chip">Evaluación documental</span>
-            <span className="trust-chip">Atención directa del abogado</span>
+            <span className="trust-chip">Atención directa de nuestro equipo jurídico</span>
             <span className="trust-chip">Sector público y privado</span>
           </div>
         </div>
         <div className="hero-card">
           <div className="card-header">
             <div className="card-header-label">Estudio Jurídico</div>
-            <div className="card-header-title">Eduardo Yévenes<br />LegalPressChile</div>
+            <div className="card-header-title">LegalPressChile</div>
           </div>
           <div className="card-body">
             {[
               ["⚖️", "Defensa laboral", "Despidos, contratas, honorarios, sumarios y Ley Karin en ambos sectores"],
               ["📋", "Análisis documental completo", "Decretos, contratos, correos, liquidaciones, resoluciones"],
               ["🎯", "Estrategia antes de demandar", "Negociar, recurrir administrativamente o litigar: se decide con criterio"],
-              ["🤝", "Atención directa", "Hablas con el abogado. Sin intermediarios."],
+              ["🤝", "Atención directa", "Conversas directamente con nuestro equipo jurídico."],
             ].map(([icon, title, desc]) => (
               <div className="card-item" key={title}>
                 <div className="card-icon">{icon}</div>
@@ -358,7 +358,7 @@ export default function App() {
               ["01", "Revisión documental completa", "Decretos, contratos, correos, WhatsApp, licencias, resoluciones, sumarios. Todo importa."],
               ["02", "Teoría del caso desde el día uno", "No se demanda a ciegas. Antes de cualquier acción se construye la estrategia correcta."],
               ["03", "Plazos bajo control", "Los plazos laborales son breves. Desde el primer contacto se mapean todas las urgencias."],
-              ["04", "Representación de principio a fin", "Desde los descargos o la demanda hasta la sentencia o el acuerdo. Sin cambios de abogado."],
+              ["04", "Representación de principio a fin", "Nuestro equipo te acompaña desde los descargos o la demanda hasta la sentencia o el acuerdo."],
             ].map(([n, t, d]) => (
               <div className="why-item" key={n}>
                 <div className="why-num">{n}</div>
@@ -445,7 +445,7 @@ export default function App() {
         <div className="footer-inner">
           <div>
             <div className="footer-logo">LegalPressChile</div>
-            <div className="footer-sub">Abogado Eduardo Yévenes · Defensa laboral en el sector público y privado</div>
+            <div className="footer-sub">Estudio jurídico laboral · Dirección de Eduardo Yévenes</div>
           </div>
           <div className="footer-right">+56 9 5039 0399</div>
         </div>
